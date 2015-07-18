@@ -47,9 +47,8 @@ public class BlurFace {
             radialGradient.setValue(CIColor(red: 0, green: 0, blue: 0, alpha: 0), forKey: "inputColor1")
             radialGradient.setValue(CIVector(x: centerX, y: centerY), forKey: kCIInputCenterKey)
             
-            let croppedImage = radialGradient.outputImage.imageByCroppingToRect(ciImage.extent())
+            let circleImage = radialGradient.outputImage.imageByCroppingToRect(ciImage.extent())
             
-            let circleImage = croppedImage
             if (maskImage == nil) {
                 maskImage = circleImage
             }
