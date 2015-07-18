@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  BlurFace: afc28b07b7ff51fd2538783513296fe073025cf0
+  BlurFace: 097f37cd9c96da2a8bbaaf5f99dd79d59dca9ca9
 
 COCOAPODS: 0.36.4
