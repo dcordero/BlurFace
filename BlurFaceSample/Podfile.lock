@@ -1,0 +1,14 @@
+PODS:
+  - BlurFace (0.0.1)
+
+DEPENDENCIES:
+  - BlurFace (from `../`)
+
+EXTERNAL SOURCES:
+  BlurFace:
+    :path: ../
+
+SPEC CHECKSUMS:
+  BlurFace: afc28b07b7ff51fd2538783513296fe073025cf0
+
+COCOAPODS: 0.36.4

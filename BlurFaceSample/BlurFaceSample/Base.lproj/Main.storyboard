@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BlurFaceSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PJQ-mu-vyK">
+                                <rect key="frame" x="16" y="28" width="568" height="476"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tes-cO-wz1">
+                                <rect key="frame" x="16" y="562" width="123" height="30"/>
+                                <state key="normal" title="Load from Gallery">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loadImageButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oVh-6f-2Tw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfa-Ah-T0s">
+                                <rect key="frame" x="549" y="562" width="30" height="30"/>
+                                <state key="normal" title="Blur">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="blurButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GQA-1J-IcW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="PJQ-mu-vyK" secondAttribute="trailing" constant="20" id="1Ty-Wn-wJU"/>
+                            <constraint firstItem="Pfa-Ah-T0s" firstAttribute="baseline" secondItem="tes-cO-wz1" secondAttribute="baseline" id="1Yb-el-dfb"/>
+                            <constraint firstItem="PJQ-mu-vyK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="2HD-28-zRB"/>
+                            <constraint firstItem="PJQ-mu-vyK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="3EG-iI-yDS"/>
+                            <constraint firstItem="PJQ-mu-vyK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="JGb-Rj-zsF"/>
+                            <constraint firstAttribute="centerX" secondItem="PJQ-mu-vyK" secondAttribute="centerX" id="OQJ-NJ-TRT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PJQ-mu-vyK" secondAttribute="bottom" constant="20" id="QBb-vo-3ZP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tes-cO-wz1" secondAttribute="bottom" constant="8" symbolic="YES" id="XsS-JZ-jPK"/>
+                            <constraint firstItem="tes-cO-wz1" firstAttribute="centerX" secondItem="PJQ-mu-vyK" secondAttribute="centerX" id="Ycf-Bn-mFg"/>
+                            <constraint firstItem="PJQ-mu-vyK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="dVf-MN-tKW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Pfa-Ah-T0s" secondAttribute="trailing" constant="5" id="eHn-cG-u8I"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PJQ-mu-vyK" secondAttribute="bottom" constant="96" id="jjI-3H-Pl1"/>
+                            <constraint firstItem="PJQ-mu-vyK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nFa-tu-kf8"/>
+                            <constraint firstItem="PJQ-mu-vyK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="rfd-D4-qL5"/>
+                            <constraint firstItem="tes-cO-wz1" firstAttribute="leading" secondItem="PJQ-mu-vyK" secondAttribute="leading" id="vq5-4X-G8C"/>
+                            <constraint firstItem="PJQ-mu-vyK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="y8A-8r-nTN"/>
+                            <constraint firstItem="tes-cO-wz1" firstAttribute="top" secondItem="PJQ-mu-vyK" secondAttribute="bottom" constant="23" id="zO8-Vj-eWl"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1Ty-Wn-wJU"/>
+                                <exclude reference="3EG-iI-yDS"/>
+                                <exclude reference="OQJ-NJ-TRT"/>
+                                <exclude reference="dVf-MN-tKW"/>
+                                <exclude reference="nFa-tu-kf8"/>
+                                <exclude reference="rfd-D4-qL5"/>
+                                <exclude reference="Ycf-Bn-mFg"/>
+                                <exclude reference="zO8-Vj-eWl"/>
+                                <exclude reference="QBb-vo-3ZP"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="blurButton" destination="Pfa-Ah-T0s" id="iNm-z5-hHW"/>
+                        <outlet property="imageView" destination="PJQ-mu-vyK" id="GbC-JX-IJV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
