@@ -8,13 +8,11 @@ BlurFace is a swift component that allows to blur faces in an UIImage quite easi
 Usage
 =====
 
-BlurFace is available using CocoaPods
+BlurFace is available in CocoaPods
 
 ```
-pod 'BlurFace', :git => 'https://github.com/dcordero/BlurFace.git' 
+pod 'BlurFace', '~> 0.0.1'
 ```
-
-TODO: Send it to CocoaPods Specs
 
 Available methods
 =================
