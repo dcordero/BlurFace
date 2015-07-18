@@ -1,9 +1,9 @@
 BlurFace
 ========
 
-BlurFace is a swift component that allows to blur faces in an image quite easily.
+BlurFace is a swift component that allows to blur faces in an UIImage quite easily.
 
-![](after.png)
+![](Preview.gif)
 
 Usage
 =====
@@ -21,8 +21,8 @@ Available methods
 
 `public func hasFaces() -> Bool`
 
-Check whether the image contains faces actually
+Check whether the image contains any faces
 
 `public func blurFaces() -> UIImage`
 
-Returns a new image with blurring all the faces in the original image
+Returns a new image blurring all the faces in the original image
