@@ -21,8 +21,8 @@ Available methods
 
 `public func hasFaces() -> Bool`
 
-Check whether the image contains any faces
+Check whether the image contains any face
 
 `public func blurFaces() -> UIImage`
 
-Returns a new image blurring all the faces in the original image
+Return a new image blurring all the faces found in the original image
